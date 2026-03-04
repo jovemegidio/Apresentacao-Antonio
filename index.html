@@ -11,6 +11,10 @@
   <meta property="og:image" content="https://github.com/jovemegidio.png" />
   <meta property="og:type" content="website" />
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="Avatar Pessoal.png" />
+  <link rel="apple-touch-icon" href="Avatar Pessoal.png" />
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -273,15 +277,23 @@
     }
 
     .nav-logo {
-      font-family: var(--font-mono);
-      font-size: 1.3rem;
-      font-weight: 700;
-      background: var(--gradient-hero);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+      display: flex;
+      align-items: center;
       cursor: pointer;
       transition: opacity var(--transition);
+    }
+
+    .nav-logo img {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--accent-1);
+      transition: border-color var(--transition);
+    }
+
+    .nav-logo:hover img {
+      border-color: var(--accent-2);
     }
 
     .nav-logo:hover { opacity: 0.8; }
@@ -1314,7 +1326,7 @@
   <!-- ===== NAVBAR ===== -->
   <nav class="navbar" id="navbar" aria-label="Navegação principal">
     <div class="navbar-inner">
-      <a href="#home" class="nav-logo" aria-label="Antonio Egidio — Ir ao início">&lt;AE /&gt;</a>
+      <a href="#home" class="nav-logo" aria-label="Antonio Egidio — Ir ao início"><img src="Avatar Pessoal.png" alt="Antonio Egidio Logo" /></a>
 
       <ul class="nav-links" id="navLinks" role="menubar">
         <li role="none"><a href="#home" role="menuitem" data-i18n="nav.home">Início</a></li>
