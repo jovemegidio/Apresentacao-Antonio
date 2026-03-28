@@ -943,6 +943,17 @@ at<!DOCTYPE html>
 
     .project-card-body { padding: 24px; }
 
+    .project-card-image.placeholder {
+      background: var(--gradient-card);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .project-card-image.placeholder .placeholder-icon {
+      color: var(--text-tertiary);
+      opacity: 0.5;
+    }
+
     .project-card-title {
       font-size: 1.1rem;
       font-weight: 700;
@@ -1417,19 +1428,19 @@ at<!DOCTYPE html>
     <div class="stats-section" id="stats" role="region" aria-label="Estatísticas">
       <div class="stats-grid">
         <div class="stat-item">
-          <span class="stat-number" data-target="13" aria-label="13+">0</span>
+          <span class="stat-number" data-target="26" aria-label="26+">0</span>
           <span class="stat-label" data-i18n="stats.repos">Repositórios</span>
         </div>
         <div class="stat-item">
-          <span class="stat-number" data-target="1" aria-label="1+">0</span>
-          <span class="stat-label" data-i18n="stats.xp">Ano de XP</span>
+          <span class="stat-number" data-target="3" aria-label="3+">0</span>
+          <span class="stat-label" data-i18n="stats.xp">Anos de XP</span>
         </div>
         <div class="stat-item">
-          <span class="stat-number" data-target="49" aria-label="49+">0</span>
+          <span class="stat-number" data-target="284" aria-label="284+">0</span>
           <span class="stat-label" data-i18n="stats.contributions">Contribuições</span>
         </div>
         <div class="stat-item">
-          <span class="stat-number" data-target="8" aria-label="8+">0</span>
+          <span class="stat-number" data-target="26" aria-label="26+">0</span>
           <span class="stat-label" data-i18n="stats.projects">Projetos</span>
         </div>
       </div>
@@ -1479,7 +1490,7 @@ at<!DOCTYPE html>
                 <i data-lucide="briefcase" aria-hidden="true"></i>
                 <div>
                   <div class="info-label" data-i18n="about.experience">Experiência</div>
-                  <div class="info-value" data-i18n="about.experienceValue">1 ano</div>
+                  <div class="info-value" data-i18n="about.experienceValue">3 anos</div>
                 </div>
               </div>
               <div class="about-info-item">
@@ -1694,6 +1705,90 @@ at<!DOCTYPE html>
             </div>
           </article>
 
+          <article class="project-card reveal" data-category="destaque">
+            <div class="project-card-image placeholder">
+              <i data-lucide="package" class="placeholder-icon" style="width:48px;height:48px" aria-hidden="true"></i>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">Zyntra ERP</h3>
+              <p class="project-card-desc" data-i18n="projects.zyntraerp.desc">Sistema de Gerenciamento Empresarial completo com módulos de vendas, estoque, clientes e relatórios.</p>
+              <div class="project-card-tech"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+              <div class="project-card-links">
+                <a href="https://github.com/jovemegidio/Zyntra" target="_blank" rel="noopener noreferrer" class="project-link"><i data-lucide="github" aria-hidden="true"></i> <span data-i18n="projects.code">Código</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="destaque">
+            <div class="project-card-image placeholder">
+              <i data-lucide="trending-up" class="placeholder-icon" style="width:48px;height:48px" aria-hidden="true"></i>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">Painel Marketing Multinível</h3>
+              <p class="project-card-desc" data-i18n="projects.painel.desc">Painel de marketing multinível com dashboard de métricas, gestão de rede e relatórios de desempenho.</p>
+              <div class="project-card-tech"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+              <div class="project-card-links">
+                <a href="https://github.com/jovemegidio/Painel-Marketing-Multinivel" target="_blank" rel="noopener noreferrer" class="project-link"><i data-lucide="github" aria-hidden="true"></i> <span data-i18n="projects.code">Código</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="destaque">
+            <div class="project-card-image placeholder">
+              <i data-lucide="gamepad-2" class="placeholder-icon" style="width:48px;height:48px" aria-hidden="true"></i>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">Ultrafoot</h3>
+              <p class="project-card-desc" data-i18n="projects.ultrafoot.desc">Football Manager feito com Python, Pyinstaller, HTML, CSS e JavaScript com experiência desktop.</p>
+              <div class="project-card-tech"><span>Python</span><span>HTML5</span><span>JavaScript</span></div>
+              <div class="project-card-links">
+                <a href="https://github.com/jovemegidio/Ultrafoot" target="_blank" rel="noopener noreferrer" class="project-link"><i data-lucide="github" aria-hidden="true"></i> <span data-i18n="projects.code">Código</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="estudo">
+            <div class="project-card-image placeholder">
+              <i data-lucide="utensils" class="placeholder-icon" style="width:48px;height:48px" aria-hidden="true"></i>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">Marmitaria Cardápio</h3>
+              <p class="project-card-desc" data-i18n="projects.marmitaria.desc">Cardápio digital interativo para marmitaria com design responsivo e categorias de pratos.</p>
+              <div class="project-card-tech"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+              <div class="project-card-links">
+                <a href="https://github.com/jovemegidio/Marmitaria-Cardapio" target="_blank" rel="noopener noreferrer" class="project-link"><i data-lucide="github" aria-hidden="true"></i> <span data-i18n="projects.code">Código</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="destaque">
+            <div class="project-card-image placeholder">
+              <i data-lucide="layout-dashboard" class="placeholder-icon" style="width:48px;height:48px" aria-hidden="true"></i>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">Sistema CMS</h3>
+              <p class="project-card-desc" data-i18n="projects.cms.desc">Sistema CMS completo com painel admin, autenticação JWT, CRUD e dashboard React + TypeScript + Node.js.</p>
+              <div class="project-card-tech"><span>React</span><span>TypeScript</span><span>Node.js</span></div>
+              <div class="project-card-links">
+                <a href="https://github.com/jovemegidio/Sistema-CMS" target="_blank" rel="noopener noreferrer" class="project-link"><i data-lucide="github" aria-hidden="true"></i> <span data-i18n="projects.code">Código</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="destaque">
+            <div class="project-card-image placeholder">
+              <i data-lucide="messages-square" class="placeholder-icon" style="width:48px;height:48px" aria-hidden="true"></i>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">Concord</h3>
+              <p class="project-card-desc" data-i18n="projects.concord.desc">Plataforma de comunicação e gestão inspirada em Discord + Trello + Notion com TypeScript.</p>
+              <div class="project-card-tech"><span>TypeScript</span><span>React</span><span>Node.js</span></div>
+              <div class="project-card-links">
+                <a href="https://github.com/jovemegidio/concord" target="_blank" rel="noopener noreferrer" class="project-link"><i data-lucide="github" aria-hidden="true"></i> <span data-i18n="projects.code">Código</span></a>
+              </div>
+            </div>
+          </article>
+
         </div>
       </div>
     </section>
@@ -1731,11 +1826,11 @@ at<!DOCTYPE html>
               </div>
             </a>
 
-            <a href="https://github.com/jovemegidio?tab=repositories" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="Repositórios — 13 projetos">
+            <a href="https://github.com/jovemegidio?tab=repositories" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="Repositórios — 26 projetos">
               <div class="contact-card-icon repos"><i data-lucide="folder-git-2" aria-hidden="true"></i></div>
               <div class="contact-card-text">
                 <div class="contact-card-label" data-i18n="contact.reposLabel">Repositórios</div>
-                <div class="contact-card-value" data-i18n="contact.reposValue">13 projetos</div>
+                <div class="contact-card-value" data-i18n="contact.reposValue">26 projetos</div>
               </div>
             </a>
           </div>
@@ -1777,7 +1872,7 @@ at<!DOCTYPE html>
         'hero.btnContact': 'Entre em contato',
         'hero.scroll': 'Scroll down',
         'stats.repos': 'Repositórios',
-        'stats.xp': 'Ano de XP',
+        'stats.xp': 'Anos de XP',
         'stats.contributions': 'Contribuições',
         'stats.projects': 'Projetos',
         'about.label': 'sobre mim',
@@ -1787,7 +1882,7 @@ at<!DOCTYPE html>
         'about.location': 'Localização',
         'about.locationValue': 'São Paulo, Brasil',
         'about.experience': 'Experiência',
-        'about.experienceValue': '1 ano',
+        'about.experienceValue': '3 anos',
         'about.focus': 'Foco',
         'about.status': 'Status',
         'about.statusValue': 'Disponível',
@@ -1812,7 +1907,7 @@ at<!DOCTYPE html>
         'contact.subtitle': 'Entre em contato e acompanhe minhas redes sociais!',
         'contact.text': 'Estou disponível para oportunidades de trabalho, freelance ou apenas para trocar uma ideia sobre tecnologia. Fique à vontade para me chamar!',
         'contact.reposLabel': 'Repositórios',
-        'contact.reposValue': '13 projetos',
+        'contact.reposValue': '26 projetos',
         'footer.text': 'Feito com <span class="heart">\u2665</span> e muito \u2615',
         'footer.copy': '\u00A9 2026 Antonio Egidio Neto \u2014 S\u00E3o Paulo, Brasil \uD83C\uDDE7\uD83C\uDDF7',
         'a11y.skip': 'Pular para o conteúdo',
@@ -1835,7 +1930,7 @@ at<!DOCTYPE html>
         'hero.btnContact': 'Get in touch',
         'hero.scroll': 'Scroll down',
         'stats.repos': 'Repositories',
-        'stats.xp': 'Year of XP',
+        'stats.xp': 'Years of XP',
         'stats.contributions': 'Contributions',
         'stats.projects': 'Projects',
         'about.label': 'about me',
@@ -1845,7 +1940,7 @@ at<!DOCTYPE html>
         'about.location': 'Location',
         'about.locationValue': 'S\u00E3o Paulo, Brazil',
         'about.experience': 'Experience',
-        'about.experienceValue': '1 year',
+        'about.experienceValue': '3 years',
         'about.focus': 'Focus',
         'about.status': 'Status',
         'about.statusValue': 'Available',
@@ -1865,12 +1960,18 @@ at<!DOCTYPE html>
         'projects.calc.desc': 'Glassmorphism interface with keyboard support and Brazilian number formatting.',
         'projects.nail.desc': 'Creative project with modern JavaScript, focused on interactive design and user experience.',
         'projects.adega.desc': 'Wine shop landing page with elegant design, wine catalog and immersive experience.',
+        'projects.zyntraerp.desc': 'Complete Business Management System with sales, inventory, customers and reporting modules.',
+        'projects.painel.desc': 'Multi-level marketing panel with metrics dashboard, network management and performance reports.',
+        'projects.ultrafoot.desc': 'Football Manager built with Python, Pyinstaller, HTML, CSS and JavaScript with desktop experience.',
+        'projects.marmitaria.desc': 'Interactive digital menu for meal prep shop with responsive design and dish categories.',
+        'projects.cms.desc': 'Complete CMS system with admin panel, JWT authentication, CRUD and React + TypeScript + Node.js dashboard.',
+        'projects.concord.desc': 'Communication and management platform inspired by Discord + Trello + Notion with TypeScript.',
         'contact.label': 'contact',
         'contact.title': "Let's talk?",
         'contact.subtitle': 'Get in touch and follow my social media!',
         'contact.text': "I'm available for job opportunities, freelance work, or just to chat about technology. Feel free to reach out!",
         'contact.reposLabel': 'Repositories',
-        'contact.reposValue': '13 projects',
+        'contact.reposValue': '26 projects',
         'footer.text': 'Made with <span class="heart">\u2665</span> and lots of \u2615',
         'footer.copy': '\u00A9 2026 Antonio Egidio Neto \u2014 S\u00E3o Paulo, Brazil \uD83C\uDDE7\uD83C\uDDF7',
         'a11y.skip': 'Skip to content',
@@ -1893,7 +1994,7 @@ at<!DOCTYPE html>
         'hero.btnContact': 'Cont\u00E1ctame',
         'hero.scroll': 'Scroll down',
         'stats.repos': 'Repositorios',
-        'stats.xp': 'A\u00F1o de XP',
+        'stats.xp': 'A\u00F1os de XP',
         'stats.contributions': 'Contribuciones',
         'stats.projects': 'Proyectos',
         'about.label': 'sobre m\u00ED',
@@ -1903,7 +2004,7 @@ at<!DOCTYPE html>
         'about.location': 'Ubicaci\u00F3n',
         'about.locationValue': 'S\u00E3o Paulo, Brasil',
         'about.experience': 'Experiencia',
-        'about.experienceValue': '1 a\u00F1o',
+        'about.experienceValue': '3 a\u00F1os',
         'about.focus': 'Enfoque',
         'about.status': 'Estado',
         'about.statusValue': 'Disponible',
@@ -1923,12 +2024,18 @@ at<!DOCTYPE html>
         'projects.calc.desc': 'Interfaz glassmorphism con soporte de teclado y formateo brasile\u00F1o de n\u00FAmeros.',
         'projects.nail.desc': 'Proyecto creativo con JavaScript moderno, enfocado en dise\u00F1o interactivo y experiencia del usuario.',
         'projects.adega.desc': 'Landing page para bodega con diseño elegante, catálogo de vinos y experiencia inmersiva.',
+        'projects.zyntraerp.desc': 'Sistema de Gestión Empresarial completo con módulos de ventas, inventario, clientes e informes.',
+        'projects.painel.desc': 'Panel de marketing multinivel con dashboard de métricas, gestión de red e informes de rendimiento.',
+        'projects.ultrafoot.desc': 'Football Manager hecho con Python, Pyinstaller, HTML, CSS y JavaScript con experiencia de escritorio.',
+        'projects.marmitaria.desc': 'Menú digital interactivo para restaurante con diseño responsivo y categorías de platos.',
+        'projects.cms.desc': 'Sistema CMS completo con panel admin, autenticación JWT, CRUD y dashboard React + TypeScript + Node.js.',
+        'projects.concord.desc': 'Plataforma de comunicación y gestión inspirada en Discord + Trello + Notion con TypeScript.',
         'contact.label': 'contacto',
         'contact.title': '\u00BFHablamos?',
         'contact.subtitle': '\u00A1Cont\u00E1ctame y sigue mis redes sociales!',
         'contact.text': 'Estoy disponible para oportunidades de trabajo, freelance o simplemente para charlar sobre tecnolog\u00EDa. \u00A1No dudes en contactarme!',
         'contact.reposLabel': 'Repositorios',
-        'contact.reposValue': '13 proyectos',
+        'contact.reposValue': '26 proyectos',
         'footer.text': 'Hecho con <span class="heart">\u2665</span> y mucho \u2615',
         'footer.copy': '\u00A9 2026 Antonio Egidio Neto \u2014 S\u00E3o Paulo, Brasil \uD83C\uDDE7\uD83C\uDDF7',
         'a11y.skip': 'Saltar al contenido',
